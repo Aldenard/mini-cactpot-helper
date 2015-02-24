@@ -1,0 +1,103 @@
+html, body, div, ul, ol, li, dl, dt, dd, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+.pot-board {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.pot-item,
+.pot-arrow {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  margin: 3px;
+  text-align: center;
+
+  float: left;
+}
+
+.pot-item {
+  border-radius: 25px;
+  border: 1px solid gray;
+
+  padding: 3px 0 3px 0;
+  font-size: 40px;
+}
+
+.pot-item.row-start,
+.pot-arrow.row-start {
+  clear: both;
+}
+
+.pot-item > input {
+  position: absolute;
+  display: none;
+  width: 100%;
+  font-size: 30px;
+}
+
+.arrow-score {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 20px;
+}
+
+.arrow {
+  display: block;
+  font-size: 30px;
+}
+
+.arrow.arrow-right {
+  transform: rotate(0deg);
+}
+
+.arrow.arrow-bottom {
+  transform: rotate(90deg);
+}
+
+.arrow.arrow-right-bottom {
+  transform: rotate(45deg);
+}
+
+.arrow.arrow-left-bottom {
+  transform: rotate(135deg);
+}
+
+.score-board {
+  display: block;
+  width: 50%;
+  float: left;
+
+  font-size: 20px;
+}
+
+.score-board dt {
+  display: block;
+  width: 50px;
+  float: left;
+}
+
+.score-board dd {
+  display: block;
+  width: 60px;
+  margin-left: 50px;
+  text-align: right;
+}

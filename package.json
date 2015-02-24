@@ -1,0 +1,9 @@
+{
+  "name": "mini-cactpot-helper",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.2.1",
+    "gulp": "^3.8.11"
+  }
+}
